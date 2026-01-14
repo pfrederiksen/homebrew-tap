@@ -5,21 +5,21 @@
 class CostBlame < Formula
   desc "Local-first CLI to attribute AWS cost spikes to services, tags, and likely resources"
   homepage "https://github.com/pfrederiksen/cost-blame"
-  version "0.2.1"
+  version "0.2.2"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/pfrederiksen/cost-blame/releases/download/v0.2.1/cost-blame_0.2.1_Darwin_x86_64.tar.gz"
-      sha256 "36d7545829f2646f2e69c3a0fbff89da4b58e31a129974a1dcfbe9937417788c"
+      url "https://github.com/pfrederiksen/cost-blame/releases/download/v0.2.2/cost-blame_0.2.2_Darwin_x86_64.tar.gz"
+      sha256 "04792ed5e9d938ab4df29229327519f47facfe39b01ce7f0877638776b852f59"
 
       def install
         bin.install "cost-blame"
       end
     end
     on_arm do
-      url "https://github.com/pfrederiksen/cost-blame/releases/download/v0.2.1/cost-blame_0.2.1_Darwin_arm64.tar.gz"
-      sha256 "c557b6a76f75cc2c76cf8860f850010b21277d43a2416dbbde9cc6b938c6d74c"
+      url "https://github.com/pfrederiksen/cost-blame/releases/download/v0.2.2/cost-blame_0.2.2_Darwin_arm64.tar.gz"
+      sha256 "b28b90229e5261944a15aa04f6e918609b35f64c46d50540d554488638998051"
 
       def install
         bin.install "cost-blame"
@@ -30,8 +30,8 @@ class CostBlame < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/pfrederiksen/cost-blame/releases/download/v0.2.1/cost-blame_0.2.1_Linux_x86_64.tar.gz"
-        sha256 "e716780a813280feb8e725b64077b7e93367aee5e71d801ea8b84dc1c5ddc644"
+        url "https://github.com/pfrederiksen/cost-blame/releases/download/v0.2.2/cost-blame_0.2.2_Linux_x86_64.tar.gz"
+        sha256 "cd5b0a705a9633471c5501276c9a4644a4ea0d6d28a0dafeaaa90cefbc683064"
 
         def install
           bin.install "cost-blame"
@@ -40,8 +40,8 @@ class CostBlame < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/pfrederiksen/cost-blame/releases/download/v0.2.1/cost-blame_0.2.1_Linux_arm64.tar.gz"
-        sha256 "0f5efe7282ab6ee86f5a04a09385a4776fb8db794d147cd062775e04e709ac71"
+        url "https://github.com/pfrederiksen/cost-blame/releases/download/v0.2.2/cost-blame_0.2.2_Linux_arm64.tar.gz"
+        sha256 "39c15d539668745abceac951644622b288fd85c23f1e1997085a5c30332c33fd"
 
         def install
           bin.install "cost-blame"
