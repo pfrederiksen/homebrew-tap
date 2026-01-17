@@ -5,21 +5,21 @@
 class Configdiff < Formula
   desc "Semantic, human-grade diffs for YAML/JSON/HCL configuration files"
   homepage "https://github.com/pfrederiksen/configdiff"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pfrederiksen/configdiff/releases/download/v0.1.1/configdiff_0.1.1_darwin_x86_64.tar.gz"
-      sha256 "73211a5f384438cfa5eb4d176db22553a03a2e3bee45f85092e61dcc527e812b"
+      url "https://github.com/pfrederiksen/configdiff/releases/download/v0.2.0/configdiff_0.2.0_darwin_x86_64.tar.gz"
+      sha256 "85cc0bfb094c84bea941475d896bd33977d7c64bc52cdc97fd5bda8f5a6dcb3a"
 
       def install
         bin.install "configdiff"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pfrederiksen/configdiff/releases/download/v0.1.1/configdiff_0.1.1_darwin_arm64.tar.gz"
-      sha256 "86b156ac7ba9205f7419bd8ccdd87856fb4c69e860a4ec1457c10d4c8204f420"
+      url "https://github.com/pfrederiksen/configdiff/releases/download/v0.2.0/configdiff_0.2.0_darwin_arm64.tar.gz"
+      sha256 "f3c9385a7722fe105050677acaf327e7abac4bb0ab583bdb84165c2c522c6fb1"
 
       def install
         bin.install "configdiff"
@@ -29,22 +29,22 @@ class Configdiff < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pfrederiksen/configdiff/releases/download/v0.1.1/configdiff_0.1.1_linux_x86_64.tar.gz"
-      sha256 "0193d96c285cd42d2fdd2ef8b2e430388e9225aedc1c0c14485bde591d374e62"
+      url "https://github.com/pfrederiksen/configdiff/releases/download/v0.2.0/configdiff_0.2.0_linux_x86_64.tar.gz"
+      sha256 "fe1d9257a05757d60115ad14f1ae2f13e3172a61a3cb2d139c61e0d996dc9caa"
       def install
         bin.install "configdiff"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/pfrederiksen/configdiff/releases/download/v0.1.1/configdiff_0.1.1_linux_armv6.tar.gz"
-      sha256 "2730ef43b29ff5e4708acbd274dd17e8d31ab1a7a1fa29e960b3cacec87dfc80"
+      url "https://github.com/pfrederiksen/configdiff/releases/download/v0.2.0/configdiff_0.2.0_linux_armv6.tar.gz"
+      sha256 "a56d788123b606c35f4df66374f8ddfb9f98ab06226a04d9ade597cc4db9f682"
       def install
         bin.install "configdiff"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pfrederiksen/configdiff/releases/download/v0.1.1/configdiff_0.1.1_linux_arm64.tar.gz"
-      sha256 "f08cb355acef8943238bff3884376a2e604bbb03b1474bfa152e7ef9dcb216ea"
+      url "https://github.com/pfrederiksen/configdiff/releases/download/v0.2.0/configdiff_0.2.0_linux_arm64.tar.gz"
+      sha256 "cbf9cdfe6b8095e37140e1cee746d8d908c42e33276de790474ca80f42d27b18"
       def install
         bin.install "configdiff"
       end
