@@ -5,21 +5,21 @@
 class VgaEvents < Formula
   desc "CLI tool to check for newly-added VGA Golf state events"
   homepage "https://github.com/pfrederiksen/vga-events"
-  version "0.8.0"
+  version "0.8.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pfrederiksen/vga-events/releases/download/v0.8.0/vga-events_0.8.0_darwin_amd64.tar.gz"
-      sha256 "8befae2d1dfd17e859762f813589c4bd8ef03db45c0aa8f1d7b55d92bcf918e3"
+      url "https://github.com/pfrederiksen/vga-events/releases/download/v0.8.1/vga-events_0.8.1_darwin_amd64.tar.gz"
+      sha256 "a789922448d62e6dd851aba06d8d1a1cad98318fca2e38f1ecc272026fd0e71f"
 
       def install
         bin.install "vga-events"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pfrederiksen/vga-events/releases/download/v0.8.0/vga-events_0.8.0_darwin_arm64.tar.gz"
-      sha256 "65676072a1c32d1383b12141c9a299e882571861ec6b0084d69657dd069c9965"
+      url "https://github.com/pfrederiksen/vga-events/releases/download/v0.8.1/vga-events_0.8.1_darwin_arm64.tar.gz"
+      sha256 "dcc1fee4e56cc478994c8b5099c4b71baf9b67bbc625d4798839cd6ffeacd4e4"
 
       def install
         bin.install "vga-events"
@@ -29,15 +29,15 @@ class VgaEvents < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pfrederiksen/vga-events/releases/download/v0.8.0/vga-events_0.8.0_linux_amd64.tar.gz"
-      sha256 "cd02af49580332eec6f5ab1580ba0f22da019a5601cf33dc9299724ca9a8ceba"
+      url "https://github.com/pfrederiksen/vga-events/releases/download/v0.8.1/vga-events_0.8.1_linux_amd64.tar.gz"
+      sha256 "e96d2dfa60355287ba1202d0dcda6d9ea5de941de52e03077ccae335069d9355"
       def install
         bin.install "vga-events"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pfrederiksen/vga-events/releases/download/v0.8.0/vga-events_0.8.0_linux_arm64.tar.gz"
-      sha256 "ba49beb0eea73cdb08c97488991edd77bbbdd8ef98ea54b9d190824eebb14d44"
+      url "https://github.com/pfrederiksen/vga-events/releases/download/v0.8.1/vga-events_0.8.1_linux_arm64.tar.gz"
+      sha256 "d5bf13e6d9dac75a26b68ee2cb1e0c0353db15f56cd5808255bc2f55b5934d89"
       def install
         bin.install "vga-events"
       end
