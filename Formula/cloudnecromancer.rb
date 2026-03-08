@@ -5,21 +5,21 @@
 class Cloudnecromancer < Formula
   desc "Reconstruct point-in-time AWS infrastructure snapshots by replaying CloudTrail events"
   homepage "https://github.com/pfrederiksen/cloudnecromancer"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pfrederiksen/cloudnecromancer/releases/download/v0.2.0/cloudnecromancer_v0.2.0_darwin_amd64.tar.gz"
-      sha256 "180ecef0bbb4c2e3712d38709690237c2adbe302bd768f9aee4af2b85931f395"
+      url "https://github.com/pfrederiksen/cloudnecromancer/releases/download/v0.3.0/cloudnecromancer_v0.3.0_darwin_amd64.tar.gz"
+      sha256 "581d2e93b85b19e451761aaf757d7a290befd463c60b6e8b1004cff38ccf48d2"
 
       def install
         bin.install "cloudnecromancer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pfrederiksen/cloudnecromancer/releases/download/v0.2.0/cloudnecromancer_v0.2.0_darwin_arm64.tar.gz"
-      sha256 "7fe0fc20ef23067910768d190df2fa2d0cf9cc24c449bfda3feb3eba7a2b1d30"
+      url "https://github.com/pfrederiksen/cloudnecromancer/releases/download/v0.3.0/cloudnecromancer_v0.3.0_darwin_arm64.tar.gz"
+      sha256 "866eb6e6853cc7f415454597794480ed3fed0d99988e6bdaaa8ed2a928903646"
 
       def install
         bin.install "cloudnecromancer"
@@ -29,8 +29,8 @@ class Cloudnecromancer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pfrederiksen/cloudnecromancer/releases/download/v0.2.0/cloudnecromancer_v0.2.0_linux_amd64.tar.gz"
-      sha256 "08d40f94c69fd84b9000de70ee559fea9fd15c82b11aa0e36634a59b673457f3"
+      url "https://github.com/pfrederiksen/cloudnecromancer/releases/download/v0.3.0/cloudnecromancer_v0.3.0_linux_amd64.tar.gz"
+      sha256 "d13b99e744b1d98e1aba84839e3bdfbc1e9cac27558deee9da5ebfb13fa6c5b1"
       def install
         bin.install "cloudnecromancer"
       end
