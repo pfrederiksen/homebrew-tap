@@ -5,21 +5,21 @@
 class RivianLs < Formula
   desc "Production-quality TUI + headless CLI for monitoring Rivian vehicle telemetry"
   homepage "https://github.com/pfrederiksen/rivian-ls"
-  version "0.5.7"
+  version "0.5.8"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/pfrederiksen/rivian-ls/releases/download/v0.5.7/rivian-ls_0.5.7_Darwin_x86_64.tar.gz"
-      sha256 "8542d085525b5bcdd4cb488bb56f68f6e71252d1d9aa460e372a0405d5710ada"
+      url "https://github.com/pfrederiksen/rivian-ls/releases/download/v0.5.8/rivian-ls_0.5.8_Darwin_x86_64.tar.gz"
+      sha256 "699ecf1055a9289c64bbbbeb9bbb29f8f90882845edcca1230c2cfe5cb862f1c"
 
       def install
         bin.install "rivian-ls"
       end
     end
     on_arm do
-      url "https://github.com/pfrederiksen/rivian-ls/releases/download/v0.5.7/rivian-ls_0.5.7_Darwin_arm64.tar.gz"
-      sha256 "0da99a77013280a0a64f268e565380fbaac0f59435362ff9bb3e9edaa42bf98c"
+      url "https://github.com/pfrederiksen/rivian-ls/releases/download/v0.5.8/rivian-ls_0.5.8_Darwin_arm64.tar.gz"
+      sha256 "9668db9c78935d08d02140dde917f849b1b9620ad90131f26a10230147fc727a"
 
       def install
         bin.install "rivian-ls"
@@ -30,8 +30,8 @@ class RivianLs < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/pfrederiksen/rivian-ls/releases/download/v0.5.7/rivian-ls_0.5.7_Linux_x86_64.tar.gz"
-        sha256 "d35624e322266cf4f3bb9d3eee6c1a6b51db180b9c740683874c27c986617c06"
+        url "https://github.com/pfrederiksen/rivian-ls/releases/download/v0.5.8/rivian-ls_0.5.8_Linux_x86_64.tar.gz"
+        sha256 "2e5b2638e5d2b38c725087753b204624d4764f0df87e8be46d5962f4f3b8ae5f"
 
         def install
           bin.install "rivian-ls"
@@ -40,8 +40,8 @@ class RivianLs < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/pfrederiksen/rivian-ls/releases/download/v0.5.7/rivian-ls_0.5.7_Linux_arm64.tar.gz"
-        sha256 "9ee63a2774a77a34827e30e2bf1f865874577ec8054ab276771589e24c33011f"
+        url "https://github.com/pfrederiksen/rivian-ls/releases/download/v0.5.8/rivian-ls_0.5.8_Linux_arm64.tar.gz"
+        sha256 "029ef680bbc298ed54a5f6502f1f65a422859a9186c518f51db5930667078237"
 
         def install
           bin.install "rivian-ls"
