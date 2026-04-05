@@ -5,23 +5,23 @@
 class VgaEvents < Formula
   desc "CLI tool to check for newly-added VGA Golf state events"
   homepage "https://github.com/pfrederiksen/vga-events"
-  version "0.8.1"
+  version "0.8.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pfrederiksen/vga-events/releases/download/v0.8.1/vga-events_0.8.1_darwin_amd64.tar.gz"
-      sha256 "a789922448d62e6dd851aba06d8d1a1cad98318fca2e38f1ecc272026fd0e71f"
+      url "https://github.com/pfrederiksen/vga-events/releases/download/v0.8.2/vga-events_0.8.2_darwin_amd64.tar.gz"
+      sha256 "8e4b8e0417469ca5516842628823ffe7e69242fbc5b40849b5d7c3eb3278c406"
 
-      def install
+      define_method(:install) do
         bin.install "vga-events"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pfrederiksen/vga-events/releases/download/v0.8.1/vga-events_0.8.1_darwin_arm64.tar.gz"
-      sha256 "dcc1fee4e56cc478994c8b5099c4b71baf9b67bbc625d4798839cd6ffeacd4e4"
+      url "https://github.com/pfrederiksen/vga-events/releases/download/v0.8.2/vga-events_0.8.2_darwin_arm64.tar.gz"
+      sha256 "f3fc9ced20eaef6e90b6e4b6d25547c2ec7673d073eb024ade94e088599ee240"
 
-      def install
+      define_method(:install) do
         bin.install "vga-events"
       end
     end
@@ -29,16 +29,16 @@ class VgaEvents < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pfrederiksen/vga-events/releases/download/v0.8.1/vga-events_0.8.1_linux_amd64.tar.gz"
-      sha256 "e96d2dfa60355287ba1202d0dcda6d9ea5de941de52e03077ccae335069d9355"
-      def install
+      url "https://github.com/pfrederiksen/vga-events/releases/download/v0.8.2/vga-events_0.8.2_linux_amd64.tar.gz"
+      sha256 "8f7f54059a71784d1bd3aa744a5fd8b568ef46d71515699d4dce71a91b9ceeea"
+      define_method(:install) do
         bin.install "vga-events"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pfrederiksen/vga-events/releases/download/v0.8.1/vga-events_0.8.1_linux_arm64.tar.gz"
-      sha256 "d5bf13e6d9dac75a26b68ee2cb1e0c0353db15f56cd5808255bc2f55b5934d89"
-      def install
+      url "https://github.com/pfrederiksen/vga-events/releases/download/v0.8.2/vga-events_0.8.2_linux_arm64.tar.gz"
+      sha256 "a0a0e533ec4b556ca74803c29cdacc6edf00bfdb1d65ad9da83847c03616dfcd"
+      define_method(:install) do
         bin.install "vga-events"
       end
     end
