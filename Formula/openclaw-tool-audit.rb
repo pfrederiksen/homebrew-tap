@@ -6,8 +6,8 @@ class OpenclawToolAudit < Formula
 
   desc "Audit OpenClaw allowed tools against observed tool usage"
   homepage "https://github.com/pfrederiksen/openclaw-tool-audit"
-  url "https://files.pythonhosted.org/packages/source/o/openclaw-tool-audit/openclaw_tool_audit-0.1.0.tar.gz"
-  sha256 "b0064605d8c03979603b683698e89936eb87463ec26da414617f2365a1c3786b"
+  url "https://files.pythonhosted.org/packages/f8/b3/3bd86c655822e806156a4cf3d994850cfa2991bef376a44e4f2aade03190/openclaw_tool_audit-0.1.1.tar.gz"
+  sha256 "1dc14269be3d3355303a399b4f2b8dae2a35043dc5438d38d7f061dda136b70c"
   license "MIT"
 
   depends_on "python@3.12"
@@ -17,6 +17,6 @@ class OpenclawToolAudit < Formula
   end
 
   test do
-    assert_match "openclaw-tool-audit 0.1.0", shell_output("#{bin}/openclaw-tool-audit --version")
+    assert_match "openclaw-tool-audit 0.1.1", shell_output("#{bin}/openclaw-tool-audit --version")
   end
 end
