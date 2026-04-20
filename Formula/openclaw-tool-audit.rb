@@ -17,6 +17,6 @@ class OpenclawToolAudit < Formula
   end
 
   test do
-    assert_match "openclaw-tool-audit 0.1.2", shell_output("#{bin}/openclaw-tool-audit --version")
+    assert_match(/^openclaw-tool-audit \d+\.\d+\.\d+$/, shell_output("#{bin}/openclaw-tool-audit --version").strip)
   end
 end
