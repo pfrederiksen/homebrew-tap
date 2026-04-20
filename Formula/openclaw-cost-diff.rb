@@ -6,8 +6,8 @@ class OpenclawCostDiff < Formula
 
   desc "Compare OpenClaw token usage and API cost"
   homepage "https://github.com/pfrederiksen/openclaw-cost-diff"
-  url "https://github.com/pfrederiksen/openclaw-cost-diff/archive/refs/tags/v0.1.3.tar.gz"
-  sha256 "52e08279432a42c6413b62c75471906915e42856593e4f5339675d8334bf6fa4"
+  url "https://github.com/pfrederiksen/openclaw-cost-diff/archive/refs/tags/v0.1.4.tar.gz"
+  sha256 "6bdefc52c4b14b32ff2c42d06acfa32c8c8abff4c12b8328dd7de9e55bbd44d0"
   license "MIT"
 
   depends_on "python-setuptools" => :build
