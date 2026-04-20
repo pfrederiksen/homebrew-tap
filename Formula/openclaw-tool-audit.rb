@@ -6,8 +6,8 @@ class OpenclawToolAudit < Formula
 
   desc "Audit OpenClaw allowed tools against observed tool usage"
   homepage "https://github.com/pfrederiksen/openclaw-tool-audit"
-  url "https://files.pythonhosted.org/packages/34/41/6f8313fbd7f5239e1b88f4c0463fa5e9223b212a2c198cc69c06c1862b48/openclaw_tool_audit-0.1.2.tar.gz"
-  sha256 "a954acb77c950d5de827c4efbb07fb057369f7c0b86ab86b5f4bbaf156ed4e00"
+  url "https://files.pythonhosted.org/packages/47/15/bc93578b154e1c197bce343babc96c2f50ac4fe44f763266b657825ab8fe/openclaw_tool_audit-0.1.3.tar.gz"
+  sha256 "23c979ab0c0309073deace676555ffe9f9c99672a4dce6bfe326cd34ea1e25bb"
   license "MIT"
 
   depends_on "python@3.12"
