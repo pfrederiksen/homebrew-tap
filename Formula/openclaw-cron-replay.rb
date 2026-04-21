@@ -6,8 +6,8 @@ class OpenclawCronReplay < Formula
 
   desc "Replay OpenClaw cron job formatting and delivery decisions locally"
   homepage "https://github.com/pfrederiksen/openclaw-cron-replay"
-  url "https://github.com/pfrederiksen/openclaw-cron-replay/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "c60d938f913e7d5866494395f9a5c28661d541243c5a4951f560381e80c2d3aa"
+  url "https://github.com/pfrederiksen/openclaw-cron-replay/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "cf9832ac58b042c18e95ec117f3332a6e16599f8d3aa8a62478c7341099a4222"
   license "MIT"
 
   depends_on "python-setuptools" => :build
