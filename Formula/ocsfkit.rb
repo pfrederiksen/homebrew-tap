@@ -7,8 +7,8 @@ class Ocsfkit < Formula
 
   desc "OCSF workbench for security telemetry normalization and explainability"
   homepage "https://github.com/pfrederiksen/ocsfkit"
-  url "https://github.com/pfrederiksen/ocsfkit/releases/download/v0.2.0/ocsfkit-0.2.0-py3-none-any.whl"
-  sha256 "d270db85fbffe42ff73b289c2e3f2b37308618693143ed26a3a965ef610b0db7"
+  url "https://github.com/pfrederiksen/ocsfkit/releases/download/v0.2.1/ocsfkit-0.2.1.tar.gz"
+  sha256 "684f9d2073f2a66d3ec509a980eeaf83b0ae86b37fa249b3d97f5c7c665f58c4"
   license "MIT"
 
   depends_on "rust" => :build
