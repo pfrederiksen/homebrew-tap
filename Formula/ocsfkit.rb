@@ -7,7 +7,7 @@ class Ocsfkit < Formula
 
   desc "OCSF workbench for security telemetry normalization and explainability"
   homepage "https://github.com/pfrederiksen/ocsfkit"
-  url "https://github.com/pfrederiksen/ocsfkit/releases/download/v0.6.0/ocsfkit-0.6.0.tar.gz"
+  url "https://github.com/pfrederiksen/ocsfkit/releases/download/v0.7.2/ocsfkit-0.7.2.tar.gz"
   sha256 "88da5a86d56af178a6253c2b574883458d272d57b96fda042c8f9e42a6ba1146"
   license "MIT"
 
