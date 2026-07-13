@@ -3,8 +3,8 @@ class ArccosApi < Formula
 
   desc "Read-only CLI and client library for your Arccos Golf data"
   homepage "https://github.com/pfrederiksen/arccos-api"
-  url "https://files.pythonhosted.org/packages/81/4d/e0df49067b88f21d640c0676abd2073eaa51275eb20b1d3c3bd9720ac7c9/arccos_api-0.5.0.tar.gz"
-  sha256 "f877ece163d259f42bf8f660c156726ba9fd25aac36fa03c87413bc57b111ab8"
+  url "https://files.pythonhosted.org/packages/46/b2/e957d6e0e5a1f1dfab8bd23b5f77464c291cdde2fc0f374c37c6261093c0/arccos_api-0.5.2.tar.gz"
+  sha256 "521bfc344ec57a8c250c364267e22edf3bd13147b2cb852d58a606ab5778517d"
   license "MIT"
 
   depends_on "python@3.14"
