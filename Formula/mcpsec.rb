@@ -5,21 +5,21 @@
 class Mcpsec < Formula
   desc "OWASP MCP Top 10 security scanner for Model Context Protocol servers"
   homepage "https://github.com/pfrederiksen/mcpsec"
-  version "1.1.0"
+  version "1.1.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pfrederiksen/mcpsec/releases/download/v1.1.0/mcpsec_1.1.0_darwin_amd64.tar.gz"
-      sha256 "e44b10dd15099ecdbfd8ab40934d5bc261987053685e43b995bc829d14231e2c"
+      url "https://github.com/pfrederiksen/mcpsec/releases/download/v1.1.1/mcpsec_1.1.1_darwin_amd64.tar.gz"
+      sha256 "028c25c37b8822adbab5b4f63fd02197133e18dbd60c5f6465c20878bd04c3b6"
 
       define_method(:install) do
         bin.install "mcpsec"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pfrederiksen/mcpsec/releases/download/v1.1.0/mcpsec_1.1.0_darwin_arm64.tar.gz"
-      sha256 "fee197591089154fa319410c99581622afbbec1873d67f84ae9b6b923c342d59"
+      url "https://github.com/pfrederiksen/mcpsec/releases/download/v1.1.1/mcpsec_1.1.1_darwin_arm64.tar.gz"
+      sha256 "643d919c339cd7320114e4b3f2dba3dd49e005545fb6fec5528b2a981461e8d0"
 
       define_method(:install) do
         bin.install "mcpsec"
@@ -29,15 +29,15 @@ class Mcpsec < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pfrederiksen/mcpsec/releases/download/v1.1.0/mcpsec_1.1.0_linux_amd64.tar.gz"
-      sha256 "2d0b4ce9d5dfcb483780056c3addf1e11bf75d9d95a60da5b08a1d663f0eb896"
+      url "https://github.com/pfrederiksen/mcpsec/releases/download/v1.1.1/mcpsec_1.1.1_linux_amd64.tar.gz"
+      sha256 "da89daf3ea15e9a0619940165c531274d1272117e5087bcc2145077a74499c16"
       define_method(:install) do
         bin.install "mcpsec"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pfrederiksen/mcpsec/releases/download/v1.1.0/mcpsec_1.1.0_linux_arm64.tar.gz"
-      sha256 "ae13cd21ae42e89138c15c6689c5c28bee06e3ee19f5a997e9beeced009b5834"
+      url "https://github.com/pfrederiksen/mcpsec/releases/download/v1.1.1/mcpsec_1.1.1_linux_arm64.tar.gz"
+      sha256 "d68cbd77da9caead25f47d3039ac00d574c5c4ad0fa1995cf622405bf3883394"
       define_method(:install) do
         bin.install "mcpsec"
       end
