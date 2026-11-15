@@ -6,8 +6,8 @@ class BirdweatherMcp < Formula
 
   desc "Self-hostable MCP server for BirdWeather station detections and stats"
   homepage "https://github.com/pfrederiksen/birdweather-mcp"
-  url "https://github.com/pfrederiksen/birdweather-mcp/archive/refs/tags/v0.2.4.tar.gz"
-  sha256 "6b4a15eba9a14f4552d95cbdace5d4f01b02f5c8dd7a929b17895d0d16f69069"
+  url "https://github.com/pfrederiksen/birdweather-mcp/archive/refs/tags/v0.2.5.tar.gz"
+  sha256 "ba38617f325d4b2cd9f34fcdce5e842a33bfad7d73fba4a7c0bbf4005dfed8c3"
   license "MIT"
 
   depends_on "certifi"
